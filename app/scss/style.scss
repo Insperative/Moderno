@@ -433,45 +433,47 @@
     background-size: cover;
     background-position: center;
     min-height: 761px;
-}
-
-.author__box {
-    padding: 240px 0 290px 260px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    
-    }
-
-.author__inner{
     display: flex;
-    padding: 70px 61px 85px 60px;
-    background-color: $green;
-    width: 654px;
+    justify-content: center;
+    padding-top: 250px;
+    padding-bottom: 290px;
     
-    &-tittle{
+    
+    &__box  {
+        background-color: $green;
+        width: 653px;
+        height: 216px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        
+    } 
+    &__tittle{
         font-size: 30px;
         line-height: 36px;
         color: #fff;
-        width: 266px;
-        margin-right: 50px;
+        max-width: 266px;
+        margin-right: 45px;
         span {
             font-weight: 700;
         }
     }
-    &-btn {
+    &__link {
         background-color: #fff;
         font-size: 18px;
-        padding: 25px 39px;
+        padding: 14px 39px;
         cursor: pointer;
-        
-    }
-    &-btn:hover{
+            
+        }
+    &__link:hover{
         background-color: $red;
-        a {
-            color: #fff;
+        color: #fff;
         }
     }
-}
+
+
+
 
 
 
