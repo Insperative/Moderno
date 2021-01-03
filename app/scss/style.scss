@@ -80,6 +80,8 @@
     min-height: 533px;
 }
 
+
+
 .search__inner {
     padding: 155px 0 100px;
     text-align: center;
@@ -160,6 +162,7 @@
         font-weight: 500;
         font-size: 14px;
         cursor: pointer;
+        
 
         &+button {
             margin-left: 5px;
@@ -181,6 +184,7 @@
     max-width: 442px;
     width: 100%;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
+    margin-bottom: 30px;
 
     &-img {
         min-height: 250px;
@@ -237,6 +241,7 @@
     &-author {
         display: flex;
         align-items: center;
+        max-width: 245px;
 
         .avatar {
             width: 30px;
@@ -254,13 +259,19 @@
             font-weight: 500;
         }
     }
-
+    &-star{
+        font-size: 12px;
+        span {
+            color: $bg;
+        }
+    }
 }
 
 .products__bottom-btn {
     
     text-align: center;
     button {
+        
         border: none;
         background-color: #fff;
         font-size: 16px;
@@ -269,13 +280,199 @@
         margin: 45px 5px 0;
         padding: 20px 32px;
         cursor: pointer;
+        &.mixitup-control-active{
+            background-color: $red;
+            color: #fff;
+        }
 
     }
     
 }
-
-
-
-  
-
 /* End Products */
+
+/* Start Product-slider */
+
+.product-slider {
+    padding: 110px 0px 100px;
+    margin-bottom: 121px;
+    .slick-dots {
+        text-align: center;
+        margin-top: 37px;
+        li {
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+                
+            }
+            button {
+                border: none;
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+/* End Product-slider */
+
+/* Start trigers */
+
+.trigers{
+    background-color: $bg;
+
+}
+
+.trigers__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 110px;
+}
+
+.trigers__tittle{
+    color: #fff;
+    padding-top: 127px;
+    padding-bottom: 90px;
+}
+
+.trigers__item {
+    text-align: center;
+    width: 325px;
+    &-box{
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-bottom: 33px;
+        display: block;
+        text-align: center;
+        
+        
+    }
+    &-box_box{
+        width: 113px;
+        height: 113px;
+        border-radius: 50%;
+        margin: 0 auto;
+        margin-bottom: 33px;
+        display: block;
+        text-align: center;
+        background-color: $green;
+    }
+    &-img{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 20px;
+        left: 0;
+        width: 50px;
+        height: 67px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    &-img_box{
+        top: 20px;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 71px;
+        height: 73px;
+    }
+    &-img_heart{
+        top: 22px;
+        left: 0;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        width: 86px;
+        height: 76px;
+    }
+    &-tittle{
+        font-size: 24px;
+        font-weight: 500;
+        color: #fff;
+        padding-bottom: 26px;
+
+    }
+    &-tittle_box {
+        font-size: 24px;
+        font-weight: 500;
+        color: $green;
+        padding-bottom: 26px;
+    }
+    &-text{
+        font-size: 15px;
+        line-height: 24px;
+        color: #b0bec5;
+        
+    }
+}
+
+/* End trigers */
+
+/* start author */
+
+.author {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 761px;
+}
+
+.author__box {
+    padding: 240px 0 290px 260px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+    }
+
+.author__inner{
+    display: flex;
+    padding: 70px 61px 85px 60px;
+    background-color: $green;
+    width: 654px;
+    
+    &-tittle{
+        font-size: 30px;
+        line-height: 36px;
+        color: #fff;
+        width: 266px;
+        margin-right: 50px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &-btn {
+        background-color: #fff;
+        font-size: 18px;
+        padding: 25px 39px;
+        cursor: pointer;
+        
+    }
+    &-btn:hover{
+        background-color: $red;
+        a {
+            color: #fff;
+        }
+    }
+}
+
+
+
+/* End author */
