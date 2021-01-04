@@ -472,9 +472,47 @@
         }
     }
 
-
-
-
-
-
 /* End author */
+
+/* Start Blog */
+
+.blog{
+    &__tittle {
+        padding-top: 75px;
+        padding-bottom: 60px;
+        text-align:  center;
+        padding: 0 10px;
+    }
+}
+
+.blog__inner {
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.blog__item {
+    margin-right: 30px;
+    &-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        max-width: 370px;
+        width: 100%;
+    }
+    &-tittle {
+        font-size: 24px;
+        color: #263238;
+        font-weight: 700;
+        background-color: #f8f8f8;
+        padding: 39px 58px 37px;
+        text-align: center;
+    }
+    &-tittle:hover{
+        color: $red;
+    }
+}
+
+
+/* End Blog */
